@@ -38,6 +38,10 @@ window.addEventListener('mousemove',
   mousemove.style.top = e.pageY + "px";
   });
 
- 
+  //------mousedown --------
+window.addEventListener('mousedown',
+  () => {
+  mousemove.style.transform = "scale(3) translate(-25%, -25%)";
+  });
 
 
