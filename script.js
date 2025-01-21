@@ -26,7 +26,17 @@ btn1.addEventListener("click", () => {
         });
 
 
-   
+        //------mousemove-----
+
+const mousemove = document.querySelector('.mousemove');
+window.addEventListener('mousemove',
+  (e) => {
+
+    console.log(e.pageX);
+    
+   mousemove.style.left = e.pageX + "px";
+  mousemove.style.top = e.pageY + "px";
+  });
 
  
 
