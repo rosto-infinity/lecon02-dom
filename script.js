@@ -55,3 +55,9 @@ questionContainer.addEventListener(
 "mouseenter", () => {
 questionContainer.style.background = "pink";
 });
+
+//------------mouseout ------
+questionContainer.addEventListener(
+  "mouseout", () => {
+  questionContainer.style.background = "rgba(0,0,0,0.3)";
+  });
