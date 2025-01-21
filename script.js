@@ -61,3 +61,9 @@ questionContainer.addEventListener(
   "mouseout", () => {
   questionContainer.style.background = "rgba(0,0,0,0.3)";
   });
+
+  //-------------mouseover -------
+response.addEventListener('mouseover',
+  () => {
+  response.style.transform = "rotate(1deg)";
+  });
