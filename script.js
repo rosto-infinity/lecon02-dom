@@ -50,3 +50,8 @@ window.addEventListener('mouseup',
     mousemove.style.transform = "scale(1) translate(-50%, -50%)";
 });
 
+//-------mouseenter -------
+questionContainer.addEventListener(
+"mouseenter", () => {
+questionContainer.style.background = "pink";
+});
