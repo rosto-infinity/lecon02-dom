@@ -44,4 +44,9 @@ window.addEventListener('mousedown',
   mousemove.style.transform = "scale(3) translate(-25%, -25%)";
   });
 
+  //---------mouseup --------
+window.addEventListener('mouseup',
+  () => {
+    mousemove.style.transform = "scale(1) translate(-50%, -50%)";
+});
 
