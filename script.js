@@ -87,18 +87,32 @@ document.addEventListener('keydown', function(event) {
 
 const KeydownContainer = document.querySelector(".Keydown");
 // console.log(KeydownContainer);
+// window.addEventListener("keydown", (e)=>{
+//   console.log(e);
 
-window.addEventListener("Keydown",
-  (e) => {
-  console.log(e);
+document.addEventListener("keydown", (e) => {
+  // console.log(e);
   // console.log(e.key)
+  key.textContent = e.key;
 
-  // key.textContent = e.key;
-  // if (e.key === "j") {
-  // KeydownContainer.style.background = "pink";
-  // } else if (e.key === "h") {
-  // KeydownContainer.style.background = "teal";
-  // } else {
-  // KeydownContainer.style.background = "red";
-  // }
+  if (e.key === "j") {
+  KeydownContainer.style.background = "pink";
+  } else if (e.key === "h") {
+  KeydownContainer.style.background = "teal";
+  } else {
+  KeydownContainer.style.background = "red";
+  }
   });
+
+const menu = document.querySelector("#menu");
+// console.log(menu);
+
+  window.addEventListener("scroll",
+    () => {
+    console.log(window.scrollY);
+    if (window.scrollY > 495) {
+     menu.style.top = 0;
+    } else {
+    menu.style.top = "-50px";
+  }
+});
