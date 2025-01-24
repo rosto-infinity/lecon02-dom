@@ -8,11 +8,13 @@ body{
 }
 nav{
   background-color: green;
-  position:fixed;
-  width: 100%;
-  height: 50px;
-top: -200px;
-transition: 0.5s;
+   position:fixed;
+   width:100%;
+   height:50px ;
+   /* margin: -20px; */
+   visibility: hidden;
+   /* top: 0; */
+  transition: 0.5s;
 }
   
   
@@ -32,6 +34,7 @@ transition: 0.5s;
   padding: 40px;
   text-align: center;
   margin: 15px;
+  color: white;
   }
   h2 {
   color: white;
@@ -83,3 +86,6 @@ border: 5px solid pink;
   font-size: 3rem;
   }
 
+  label{
+    color: white;
+  }

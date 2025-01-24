@@ -109,10 +109,48 @@ const menu = document.querySelector("#menu");
 
   window.addEventListener("scroll",
     () => {
-    console.log(window.scrollY);
-    if (window.scrollY > 495) {
-     menu.style.top = 0;
-    } else {
-    menu.style.top = "-50px";
+    // console.log(window.scrollY);
+    if (window.scrollY > 425) {
+      menu.style.top = 0;
+    }else{
+      menu.style.top = "-50px";
+      menu.style.visibility = "visible";
+
+    }
+});
+
+//  Formulaire 
+const inputName= document.querySelector("input[type='text']");
+const inputSelect = document.querySelector("select");
+const form = document.querySelector("form");
+const userName = document.querySelector("#userName");
+const langage = document.querySelector("#langage");
+let lang ;
+let user;
+ inputName.addEventListener("input", (e) => {
+   user = e.target.value;
+  // userName.textContent = e.target.value;
+  // userName.innerHTML = `
+  //                       <div style="color:yellow">
+  //                          ${ e.target.value}
+  //                        </div>
+  //                       `;
+ })
+
+ inputSelect.addEventListener("input", (e) => {
+     lang = e.target.value;
+  // langage.textContent = e.target.value;
+ })
+
+//  const cgu = document.querySelector("#cgu");
+ console.log(cgu);
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (cgu.checked){
+  console.log(`Merci ${user} pour votre selection du langage ${lang}`);
+  }else{
+    console.log("Veuilez acceptez les CGU");
   }
 });
+
+
