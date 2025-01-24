@@ -142,14 +142,14 @@ let user;
   // langage.textContent = e.target.value;
  })
 
-//  const cgu = document.querySelector("#cgu");
+ const cgu = document.querySelector("#cgu");
  console.log(cgu);
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (cgu.checked){
-  console.log(`Merci ${user} pour votre selection du langage ${lang}`);
+  alert(`Merci ${user} pour votre selection du langage ${lang}`);
   }else{
-    console.log("Veuilez acceptez les CGU");
+    alert("Veuilez acceptez les CGU");
   }
 });
 
