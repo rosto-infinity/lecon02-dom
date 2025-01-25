@@ -154,13 +154,19 @@ form.addEventListener("submit", (e) => {
 });
 
 // Load event
+const image = document.getElementById('image');
+console.log(image);
 
-window.addEventListener('load', function() {
-  alert('Page entièrement chargée !');
-});
+function loading() {
+  console.log('Page entièrement chargée !');
+}
 
-document.getElementById('image').addEventListener('load', function() {
-  alert('Image chargée !');
+window.addEventListener('load', loading);
+
+image.addEventListener('load', function() {
+ console.log('Image chargée');
+ 
+  
 });
 
 
