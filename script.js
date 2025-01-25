@@ -228,6 +228,7 @@ console.log(window.document.title) // Titre de la page;
 // o	onLine : Vérifie si l'utilisateur est connecté.
 // •	Exemple :
 console.log(navigator.userAgent);
+console.log(navigator.language);
 
 
 
