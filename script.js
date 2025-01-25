@@ -194,3 +194,13 @@ document.getElementById('input').addEventListener('blur', function() {
       // Supprime la classe 'highlight' lorsque le champ perd le focus
       this.classList.remove('highlight');
     });
+
+    //ForEach
+    const boxes = document.querySelectorAll('.box');
+    console.log(boxes);
+
+    boxes.forEach((box) => {
+      box.addEventListener('click', (e) => {
+        e.target.style.transform = 'scale(2)';
+      });
+    });
