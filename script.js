@@ -153,4 +153,16 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+// Load event
 
+window.addEventListener('load', function() {
+  alert('Page entièrement chargée !');
+});
+
+document.getElementById('image').addEventListener('load', function() {
+  alert('Image chargée !');
+});
+
+
+
+//
