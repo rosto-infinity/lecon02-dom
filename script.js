@@ -220,4 +220,14 @@ console.log(window.innerHeight); // Hauteur de la fenêtre visible
 // •  Bien que le document soit techniquement lié au DOM, il fait partie de l’objet window dans le BOM.
 
 console.log(window.document.title) // Titre de la page;
+// 3. navigator
+// •	Fournit des informations sur le navigateur et l'environnement de l'utilisateur.
+// •	Principales propriétés :
+// o	userAgent : Chaîne identifiant le navigateur.
+// o	language : Langue préférée de l'utilisateur.
+// o	onLine : Vérifie si l'utilisateur est connecté.
+// •	Exemple :
+console.log(navigator.userAgent);
+
+
 
