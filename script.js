@@ -267,6 +267,7 @@ console.log(history.length);
 // o	availHeight : Hauteur disponible.
 // •	Exemple :
 console.log(screen.width);
+console.log(screen.height);
 
 
 
