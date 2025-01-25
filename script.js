@@ -234,9 +234,12 @@ console.log(navigator.onLine);
 // 4. location : URL de la page
 // •	Donne des informations sur l'URL actuelle et permet de rediriger ou manipuler l'URL.
 // •	Principales propriétés :
-console.log(Location.href);
+console.log(location.href);
 
 Location.href = 'https://www.google.com';
+
+console.log(location.hostname);
+
 
 
 
