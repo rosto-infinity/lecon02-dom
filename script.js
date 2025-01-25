@@ -171,4 +171,8 @@ image.addEventListener('load', function() {
 
 
 
-//
+//blur event : Se produit lorsqu'un élément perd le focus.
+
+document.getElementById('input').addEventListener('blur', function() {
+  this.style.backgroundColor = '';
+});
