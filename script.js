@@ -254,6 +254,9 @@ console.log(location.pathname);
 history.forward()
 console.log('Tentative de navigation en avant');
 
+//Nombre d'entrées dans l'historique
+console.log(history.length);
+
 
 
 
