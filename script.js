@@ -210,5 +210,6 @@ boxes.forEach((box) =>{
 
 // 1- window
 
-console.log(window.innerWidth);
+console.log(window.innerWidth) // Largeur de la fenêtre visible;
 
+console.log(window.innerHeight); // Hauteur de la fenêtre visible
