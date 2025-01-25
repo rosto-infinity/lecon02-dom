@@ -285,6 +285,13 @@ console.log(screen.availHeight);
 
 
 
+// •	Temporisation :
+setTimeout(callback, delay) //Exécute une fonction après un délai.
+	setInterval(callback, interval) //Exécute une fonction à intervalles réguliers.
+// Exemple :
+
+
+
 
 
 
