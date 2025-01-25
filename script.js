@@ -193,8 +193,20 @@ const inputNom =document.getElementById('nom')
 
     //ForEach
    
+const boxes =document.querySelectorAll('.box')
+// console.log(boxes);
+
+boxes.forEach((box) =>{
+  box.addEventListener('click', (e)=>{
+    // console.log(e.target);
+    e.target.style.transform= 'scale(0.5)'
+    
+  })
+})
 
 
     //BOM
+    // Le BOM (Browser Object Model) en JavaScript est une interface qui permet d’interagir avec le navigateur. Contrairement au DOM (Document Object Model) qui gère la structure et le contenu d’une page HTML, le BOM concerne tout ce qui est lié au navigateur, comme la fenêtre, l’historique, l’emplacement (URL), et d’autres fonctionnalités.
 
+    
 
