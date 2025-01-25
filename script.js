@@ -214,5 +214,10 @@ console.log(window.innerWidth) // Largeur de la fenêtre visible;
 
 console.log(window.innerHeight); // Hauteur de la fenêtre visible
 
-window.alert('Hello world')
+// window.alert('Hello world')
+
+// 2. document
+// •  Bien que le document soit techniquement lié au DOM, il fait partie de l’objet window dans le BOM.
+
+console.log(window.document.title) // Titre de la page;
 
