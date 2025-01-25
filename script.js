@@ -257,6 +257,17 @@ console.log('Tentative de navigation en avant');
 //Nombre d'entrées dans l'historique
 console.log(history.length);
 
+//  history.back(); // Revient à la page précédente
+// 6. screen
+// •	Donne des informations sur l'écran de l'utilisateur.
+// •	Principales propriétés :
+// o	width : Largeur totale de l'écran.
+// o	height : Hauteur totale de l'écran.
+// o	availWidth : Largeur disponible (sans barre des tâches).
+// o	availHeight : Hauteur disponible.
+// •	Exemple :
+
+
 
 
 
