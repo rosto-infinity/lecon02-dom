@@ -229,6 +229,8 @@ console.log(window.document.title) // Titre de la page;
 // •	Exemple :
 console.log(navigator.userAgent);
 console.log(navigator.language);
+console.log(navigator.onLine);
+
 
 
 
