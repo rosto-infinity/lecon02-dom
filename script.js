@@ -164,7 +164,7 @@ function loadResouce() {
 
 window.addEventListener("load", loadResouce);
 
-image.addEventListener('load', () => console.log('Image chargée'))
+// image.addEventListener('load', () => console.log('Image chargée'))
 
 //blur event : Se produit lorsqu'un élément perd le focus.
 
@@ -210,7 +210,7 @@ boxes.forEach((box) =>{
 
 // 1- window
 
-console.log(window.innerWidth) // Largeur de la fenêtre visible;
+// console.log(window.innerWidth) // Largeur de la fenêtre visible;
 
 console.log(window.innerHeight); // Hauteur de la fenêtre visible
 
@@ -230,6 +230,16 @@ console.log(window.document.title) // Titre de la page;
 console.log(navigator.userAgent);
 console.log(navigator.language);
 console.log(navigator.onLine);
+
+// 4. location : URL de la page
+// •	Donne des informations sur l'URL actuelle et permet de rediriger ou manipuler l'URL.
+// •	Principales propriétés :
+console.log(Location.href);
+
+Location.href = 'https://www.google.com';
+
+
+
 
 
 
