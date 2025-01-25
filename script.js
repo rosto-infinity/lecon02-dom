@@ -156,10 +156,10 @@ form.addEventListener("submit", (e) => {
 // Load event
 
 const image = document.getElementById("image");
-console.log(image);
+// console.log(image);
 
 function loadResouce() {
-  console.log("Page entièrement chargée");
+  // console.log("Page entièrement chargée");
 }
 
 window.addEventListener("load", loadResouce);
@@ -208,5 +208,7 @@ boxes.forEach((box) =>{
     //BOM
     // Le BOM (Browser Object Model) en JavaScript est une interface qui permet d’interagir avec le navigateur. Contrairement au DOM (Document Object Model) qui gère la structure et le contenu d’une page HTML, le BOM concerne tout ce qui est lié au navigateur, comme la fenêtre, l’historique, l’emplacement (URL), et d’autres fonctionnalités.
 
-    
+// 1- window
+
+console.log(window.innerWidth);
 
