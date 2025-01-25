@@ -269,7 +269,19 @@ console.log(history.length);
 console.log(screen.width);
 console.log(screen.height);
 console.log(screen.availWidth );
-console.log(screen.availHeight); );
+console.log(screen.availHeight); 
+
+
+// 7. Méthodes pratiques dans le BOM
+
+
+// •	Dialogues :
+//      	alert(message) : Affiche une alerte.
+//      confirm(message) : Demande une confirmation (retourne true ou false).
+//      prompt(message) : Demande une entrée utilisateur.
+// o	Exemple :
+// const name = prompt('Quel est votre nom ?');
+// alert('Bonjour ' + name + ' !');
 
 
 
