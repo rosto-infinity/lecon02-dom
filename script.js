@@ -174,5 +174,23 @@ image.addEventListener('load', function() {
 //blur event : Se produit lorsqu'un élément perd le focus.
 
 document.getElementById('input').addEventListener('blur', function() {
-  this.style.backgroundColor = '';
+  this.style.backgroundColor = 'red';
 });
+
+
+//focus event : Se produit lorsqu'un élément obtient le focus.
+
+    // Sélectionne le champ de saisie par son ID
+    const inputNom = document.getElementById('nom');
+
+    // Ajoute un écouteur d'événement 'focus' au champ de saisie
+    inputNom.addEventListener('focus', function() {
+      // Ajoute la classe 'highlight' lorsque le champ reçoit le focus
+      this.classList.add('highlight');
+    });
+
+    // Ajoute un écouteur d'événement 'blur' au champ de saisie
+    inputNom.addEventListener('blur', function() {
+      // Supprime la classe 'highlight' lorsque le champ perd le focus
+      this.classList.remove('highlight');
+    });
