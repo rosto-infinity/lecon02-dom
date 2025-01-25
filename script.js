@@ -266,6 +266,7 @@ console.log(history.length);
 // o	availWidth : Largeur disponible (sans barre des tâches).
 // o	availHeight : Hauteur disponible.
 // •	Exemple :
+console.log(screen.width);
 
 
 
