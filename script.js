@@ -268,6 +268,7 @@ console.log(history.length);
 // •	Exemple :
 console.log(screen.width);
 console.log(screen.height);
+console.log(screen.availWidth );
 
 
 
