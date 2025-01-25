@@ -239,6 +239,7 @@ console.log(location.href);
 Location.href = 'https://www.google.com';
 
 console.log(location.hostname);
+console.log(location.pathname);
 
 
 
