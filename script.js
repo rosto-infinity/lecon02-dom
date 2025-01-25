@@ -143,7 +143,7 @@ let user;
  })
 
  const cgu = document.querySelector("#cgu");
- console.log(cgu);
+//  console.log(cgu);
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (cgu.checked){
@@ -154,53 +154,47 @@ form.addEventListener("submit", (e) => {
 });
 
 // Load event
-const image = document.getElementById('image');
+
+const image = document.getElementById("image");
 console.log(image);
 
-function loading() {
-  console.log('Page entièrement chargée !');
+function loadResouce() {
+  console.log("Page entièrement chargée");
 }
 
-window.addEventListener('load', loading);
+window.addEventListener("load", loadResouce);
 
-image.addEventListener('load', function() {
- console.log('Image chargée');
- 
-  
-});
-
-
+image.addEventListener('load', () => console.log('Image chargée'))
 
 //blur event : Se produit lorsqu'un élément perd le focus.
 
-document.getElementById('input').addEventListener('blur', function() {
-  this.style.backgroundColor = 'red';
-});
+document.getElementById('inpute').addEventListener('blur', function() {
+  this.style.backgroundColor ='red'
+})
 
 
 //focus event : Se produit lorsqu'un élément obtient le focus.
 
-    // Sélectionne le champ de saisie par son ID
-    const inputNom = document.getElementById('nom');
+const inputNom =document.getElementById('nom')
+
+ inputNom.addEventListener('focus', function(){
+   inputNom.classList.add('green')
+ })
+ inputNom.addEventListener('blur', function(){
+   inputNom.classList.remove('green')
+
+ })
 
     // Ajoute un écouteur d'événement 'focus' au champ de saisie
-    inputNom.addEventListener('focus', function() {
-      // Ajoute la classe 'highlight' lorsque le champ reçoit le focus
-      this.classList.add('highlight');
-    });
+   
 
     // Ajoute un écouteur d'événement 'blur' au champ de saisie
-    inputNom.addEventListener('blur', function() {
-      // Supprime la classe 'highlight' lorsque le champ perd le focus
-      this.classList.remove('highlight');
-    });
+    
 
     //ForEach
-    const boxes = document.querySelectorAll('.box');
-    console.log(boxes);
+   
 
-    boxes.forEach((box) => {
-      box.addEventListener('click', (e) => {
-        e.target.style.transform = 'scale(2)';
-      });
-    });
+
+    //BOM
+
+

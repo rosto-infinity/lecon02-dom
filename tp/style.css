@@ -1,0 +1,36 @@
+/* Style général pour le body */
+body {
+  margin: 0;
+  overflow: hidden; /* Empêche le défilement de la page */
+  background-color: #000; /* Couleur de fond noire pour un meilleur contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Style pour le compteur de score */
+.score {
+  position: absolute;
+  top: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Style pour les bulles */
+.bubble {
+  position: absolute;
+  bottom: -100px; /* Positionne la bulle en dehors de l'écran au départ */
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  pointer-events: auto;
+  animation: floatUp linear;
+}
+
+/* Animation pour faire flotter les bulles vers le haut */
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh); /* Fait monter la bulle au-dessus de l'écran */
+  }
+}
