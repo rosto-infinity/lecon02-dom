@@ -241,6 +241,17 @@ Location.href = 'https://www.google.com';
 console.log(location.hostname);
 console.log(location.pathname);
 
+// history : Navigation dans l'historique
+// •	Permet de naviguer dans l’historique de navigation du navigateur.
+// •	Principales méthodes :
+// o	back() : Revient à la page précédente.
+// o	forward() : Avance à la page suivante.
+// o	go(n) : Déplace de n pages (positif ou négatif).
+// o	length : Nombre d’entrées dans l’historique.
+// •	Exemple :
+
+// console.log(history.back());
+
 
 
 
