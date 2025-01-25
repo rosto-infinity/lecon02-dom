@@ -251,6 +251,9 @@ console.log(location.pathname);
 // •	Exemple :
 
 // console.log(history.back());
+history.forward()
+console.log('Tentative de navigation en avant');
+
 
 
 
