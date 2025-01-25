@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tp-bubble</title>
+</head>
+<body>
+
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      cursor: crosshair;
+    }
+    h3{
+      font-size: 10rem;
+      color: #333;
+      text-shadow: 0 0 10px #333;
+    }
+.bubble{
+  position: absolute;
+  background: rgba(255, 167, 0, 0.6);
+  border-radius: 50%;
+  opacity: 0;
+  animation: anim 8s forwards;
+  filter: hue-rotate(0deg)
+}
+@keyframes anim {
+  to {
+    top :-250px;
+    left: var(--left);
+    opacity: 1;
+    filter:hue-rotate(720deg) ;
+  }
+
+}
+
+  </style>
+  <h3>0</h3>
+
+  <script>
+  
+
+
+  const counterDisplay = document.querySelector('h3');
+  let counter =0;
+  
+  const bubbleMaker = () => {
+  const bubble = document.createElement('span');
+  bubble.classList.add('bubble');
+  document.body.appendChild(bubble);
+      // const size =Math.random()*200 + 100 + 'px';
+      const size =`${Math.random()*200 + 100 }px`;
+      bubble.style.width = size;
+      bubble.style.height = size;
+      // console.log(size);
+      bubble.style.top = Math.random()*100 +  50 +'%';
+      bubble.style.left = Math.random()*100 + '%';
+      const plusMinus = Math.random() > 0.5 ? 1 : -1;
+     // console.log(plusMinus);  //1 ou -1
+      bubble.style.setProperty("--left", Math.random()*100 * plusMinus + '%');
+      
+      //event
+      bubble.addEventListener('click', () => {
+        counter++;
+        counterDisplay.textContent = counter;
+        bubble.remove();
+      });
+
+      setTimeout(() => {
+        bubble.remove();
+      }, 8000);
+}
+
+
+
+  setInterval(bubbleMaker, 2000);
+  </script>
+</body>
+</html>
